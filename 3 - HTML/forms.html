@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms
+    </title>
+</head>
+<body>
+<!-- Form is used to collect user input -->
+    <h1> Creating Forms </h1>
+    <form action="">
+        <div>
+        <!-- Name -->
+        <!-- for = "#element-id" -->
+        <label for="fullname-id">Name:</label>
+        <input
+        type="text" 
+        name="User Full Name" 
+        id="fullname-id" 
+        placeholder="John Doe"
+        required>
+        </div>
+        <div>
+        <!-- Email -->
+        <!-- for = "#element-id" -->
+        <label for="email-id">Email:</label>
+        <input
+        type="email" 
+        name="Email ID of User" 
+        id="email-id" 
+        placeholder="johndoe@gmail.com"
+        required>
+        </div>
+        <div>
+            <!-- Password -->
+            <!-- for = "#element-id" -->
+            <label for="password-id">Password:</label>
+            <input
+            type="password" 
+            name="User Password" 
+            id="password-id" 
+            placeholder="*************"
+            required>
+        </div>
+        <div>
+            <!-- Age -->
+            <!-- for = "#element-id" -->
+            <label for="age-id">Age:</label>
+            <input
+            type="number" 
+            name="User Age" 
+            id="age-id" 
+            placeholder="18"
+            min="18"
+            max="100"
+            required>
+        </div>
+        <div>
+            <!-- Message -->
+            <!-- for = "#element-id" -->
+            <label for="message-id">Message:</label>
+            <br>
+            <textarea name="User Message" id="message-id" cols="30" rows="5" placeholder="What's on your mind?"></textarea>
+        </div>
+        <div>
+            <!-- Drop down list -->
+            <!-- for = "#element-id" -->
+            <label for="message-id">Message:</label>
+            <br>
+            <select name="User Gender" id="gender-id">
+                <option value="Select Your Gender" disabled selected hidden>--- Select your Gender ---</option>
+                <option value="Male">Male</option>
+                <option value="Female">Femail</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div>
+            <!-- ONE: Limited Number of choices -->
+            <input 
+            type="radio" 
+            name="User Profile Status" id="public-id" 
+            value="public">
+            <label for="">Public</label>
+            <input
+            type="radio" 
+            name="User Profile Status" id="private-id" 
+            value="private">
+            <label for="">Private</label>
+        </div>
+        <div>
+            <!-- ZERO OR MORE: Multiple Options -->
+            <input 
+            type="checkbox" 
+            name="genre" 
+            id="thriller-id"
+            value="Thriller">
+            <label for="thriller-id"/>Thriller</label>
+            <input 
+            type="checkbox" 
+            name="genre" 
+            id="action-id"
+            value="Action">
+            <label for="action-id"/>Action</label>
+            <input 
+            type="checkbox" 
+            name="genre" 
+            id="romance-id"
+            value="romance">
+            <label for="romance-id"/>Romance</label>
+            <input 
+            type="checkbox" 
+            name="genre" 
+            id="scifi-id"
+            value="SciFi">
+            <label for="scifi-id"/>SciFi</label>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
